@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import Image from 'next/image'
 import Hero from '@/components/home/Hero'
 import ArtworkCard from '@/components/works/ArtworkCard'
@@ -10,14 +10,26 @@ import ContactSection from '@/components/home/ContactSection'
 // Import data
 import artistData from '@/data/artist.json'
 import artworksData from '@/data/artworks.json'
+import chaptersData from '@/data/chapters.json'
 
-import type { Artist, Artwork } from '@/types'
+import type { Artist, Artwork, Chapter } from '@/types'
 
 const artist = artistData as Artist
 const artworks = artworksData as Artwork[]
+const chapters = chaptersData as Chapter[]
 
 export default function HomePage() {
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null)
+
+  // Group artworks by chapter
+  const artworksByChapter = useMemo(() => {
+    return chapters.map((chapter) => ({
+      chapter,
+      artworks: artworks
+        .filter((artwork) => artwork.chapter === chapter.id)
+        .sort((a, b) => a.order - b.order),
+    }))
+  }, [])
 
   return (
     <>
@@ -28,24 +40,57 @@ export default function HomePage() {
         tagline="Utopia = Reality"
       />
 
-      {/* Works Section */}
+      {/* Works Section - Chapter by Chapter */}
       <section id="works" className="py-24 md:py-32 scroll-mt-20">
         <div className="container-wide">
           <h2 className="font-serif text-3xl md:text-4xl text-center mb-4">
             Works
           </h2>
-          <p className="text-secondary text-center mb-16">
+          <p className="text-secondary text-center mb-20">
             작품
           </p>
 
-          {/* Works Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
-            {artworks.map((artwork) => (
-              <ArtworkCard
-                key={artwork.id}
-                artwork={artwork}
-                onClick={setSelectedArtwork}
-              />
+          {/* Chapters */}
+          <div className="space-y-32 md:space-y-40">
+            {artworksByChapter.map(({ chapter, artworks: chapterArtworks }) => (
+              <div key={chapter.id} id={chapter.id} className="scroll-mt-24">
+                {/* Chapter Header */}
+                <div className="mb-16 text-center max-w-3xl mx-auto">
+                  <h3 className="font-serif text-2xl md:text-3xl mb-4">
+                    {chapter.title}
+                  </h3>
+                  <p className="text-sm text-secondary mb-6">
+                    {chapter.titleKr}
+                  </p>
+
+                  <p className="text-lg italic text-primary/70 mb-2">
+                    &ldquo;{chapter.question}&rdquo;
+                  </p>
+                  <p className="text-sm text-secondary/80 mb-8">
+                    {chapter.questionKr}
+                  </p>
+
+                  <div className="w-16 h-px bg-primary/20 mx-auto mb-8" />
+
+                  <p className="text-primary/60 leading-relaxed">
+                    {chapter.description}
+                  </p>
+                  <p className="text-sm text-secondary/60 mt-2">
+                    {chapter.descriptionKr}
+                  </p>
+                </div>
+
+                {/* Chapter Artworks Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
+                  {chapterArtworks.map((artwork) => (
+                    <ArtworkCard
+                      key={artwork.id}
+                      artwork={artwork}
+                      onClick={setSelectedArtwork}
+                    />
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -75,7 +120,7 @@ export default function HomePage() {
               <div className="space-y-1">
                 {artist.education.map((edu, index) => (
                   <p key={index} className="text-sm text-secondary">
-                    {edu.degree}, {edu.institution} ({edu.year})
+                    {edu.degree}, {edu.institution}{edu.year ? ` (${edu.year})` : ''}
                   </p>
                 ))}
               </div>

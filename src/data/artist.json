@@ -1,29 +1,24 @@
 {
   "name": "Lim Hyejung",
-  "nameKr": "임혜정",
+  "nameKr": "임혜정 (b.1981/Korea)",
   "education": [
     {
-      "degree": "MFA in Fine Arts",
-      "institution": "Seoul National University",
-      "year": 2020
-    },
-    {
-      "degree": "BFA in Painting",
-      "institution": "Hongik University",
-      "year": 2017
+      "degree": "Department of Fine Arts",
+      "institution": "Seoul National University of Science and Technology",
+      "year": ""
     }
   ],
   "statement": {
-    "kr": "나의 작업은 자연과 인간 감정 사이의 경계를 탐구합니다. 캔버스 위에 펼쳐지는 풍경은 단순한 재현이 아닌, 내면의 세계가 외부로 투영된 결과입니다. '유토피아는 곧 현실이다'라는 명제 아래, 나는 이상화된 자연이 우리의 일상과 어떻게 연결되는지 질문합니다.\n\n각각의 시리즈는 서로 다른 감정의 결을 담고 있습니다. Secret Garden은 숨겨진 기억의 장소를, Effortless Spring은 의도 없이 피어나는 아름다움을, Desert Stories는 고독에서 발견하는 회복력을, Waters of Time은 시간의 흐름 속 의식의 변화를 탐구합니다.\n\n붓질 하나하나에는 자연을 향한 경외와 함께, 그것을 바라보는 인간의 복잡한 감정이 녹아 있습니다. 관객이 나의 작품 앞에 서서 자신만의 비밀의 정원을 발견하기를, 그리고 그 안에서 위안과 성찰을 찾기를 바랍니다.",
-    "en": "My work explores the boundaries between nature and human emotion. The landscapes that unfold on my canvas are not mere representations, but projections of inner worlds onto the external. Under the premise that 'Utopia equals Reality,' I question how idealized nature connects with our everyday existence.\n\nEach series carries different emotional textures. Secret Garden explores hidden places of memory, Effortless Spring captures beauty that blooms without intention, Desert Stories finds resilience in solitude, and Waters of Time examines the shifts in consciousness through the flow of time.\n\nEach brushstroke contains both reverence for nature and the complex emotions of the human gaze upon it. I hope that viewers standing before my work will discover their own secret gardens, finding solace and reflection within."
+    "kr": "작가는 '현실의 자연'이 아닌, 상상력으로 재구성된 자연을 탐구한다. 이 자연은 단순한 풍경 묘사가 아니라, 작가가 겪어온 감정과 경험을 바탕으로 형성된 또 하나의 세계다. 그녀의 작업은 관람자가 작품을 '바라보는 것'을 넘어, 내면의 서사를 따라 들어가도록 이끈다.\n\n작가는 자신의 작업 안에서 \"Utopia = Reality\"라는 관점을 제시한다. 이상과 현실의 경계가 흐려지는 이 지점에서 작품은 고정된 형태에 머물지 않고, 끊임없이 다듬어지고 변화하는 살아 있는 세계로 존재한다. 이러한 세계관에는 억압, 우울, 치유와 같은 복합적 정서가 자연스럽게 녹아 있다.\n\n그녀가 구축하는 시각적 언어는 개인적 경험에 기반한 상상적 이미지로 이루어져 있으며, 이는 사실을 재현하려는 목적이 아니라 세계를 새롭게 해석하고 전환하려는 시도에 가깝다. 그녀의 화면에는 유기적 형태가 자유롭게 흐르며, 감정의 흔적을 고스란히 품고 있다. 작품에 등장하는 오브제들은 특별한 상징적 의미보다는, 작가의 경험과 상상을 반영한 부산물로 이해할 수 있다.\n\n이 전시는 작가의 성향과 감정, 그리고 세계와 관계 맺는 방식이 집약된 결과물이다. 작품은 관람자에게 하나의 오브제가 아니라, 머무르고 해석할 수 있는 감각의 공간으로 다가온다. 그 속에서 우리는 작가가 구축한 내면의 세계를 따라가며 새로운 감정과 사고의 가능성을 마주하게 된다.",
+    "en": "The artist explores a version of nature reconstructed through imagination, rather than depicting \"nature as it is.\" This nature is not a simple landscape, but another world shaped by the emotions and experiences she has lived through. Her work invites viewers not just to look at the pieces, but to follow the inner narrative within them.\n\nWithin her practice, the artist presents the perspective of \"Utopia = Reality.\" At the point where ideals and reality blur, her works exist as living worlds that are continuously refined and transformed, rather than fixed forms. Within this worldview, complex emotions such as oppression, melancholy, and healing naturally merge.\n\nThe visual language she develops is composed of imaginative images rooted in personal experience. It is less about reproducing reality and more about reinterpreting and transforming the world. Organic forms flow freely across her canvases, carrying traces of emotion. The objects that appear in her works are not meant to hold specific symbolic meaning, but rather reflect the artist's experiences and imagination as byproducts.\n\nThis exhibition is the culmination of the artist's temperament, emotions, and the way she engages with the world. Her works approach the viewer not as singular objects, but as sensory spaces to linger in and interpret. Within these spaces, we follow the inner worlds she constructs, encountering new possibilities for emotion and thought."
   },
   "bio": {
-    "kr": "자연의 서정성과 내면의 풍경을 탐구하는 작가",
-    "en": "An artist exploring the lyricism of nature and inner landscapes"
+    "kr": "상상력으로 재구성된 자연을 통해 내면의 세계를 탐구하는 작가",
+    "en": "An artist exploring inner worlds through nature reconstructed by imagination"
   },
   "profileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
   "contact": {
     "email": "hello@limhyejung.com",
-    "instagram": "@limhyejung_art"
+    "instagram": "@limhyejung_artworks"
   }
 }
